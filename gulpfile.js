@@ -100,15 +100,15 @@ const sprite = () => {
 
 const copy = (done) => {
     gulp.src([
-        'source/fonts/**/*.*',
+        'source/fonts/*',
         'source/*.ico',
         'source/favicons/*',
         'source/*.webmanifest',
-        'source/css/normalize.css'
+        'source/css/*.css',
     ], {
         base: 'source'
     })
-        .pipe(gulp.dest('build'))
+        .pipe(gulp.dest('build'));
     done();
 }
 

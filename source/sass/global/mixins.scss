@@ -1,0 +1,26 @@
+@mixin pk25 {
+  font-size: 2.5rem;
+  line-height: 117%;
+  letter-spacing: 0.01em;
+}
+
+@mixin pk18 {
+  font-size: 1.8rem;
+  line-height: 122%;
+}
+
+@mixin pk50 {
+  font-weight: 800;
+  font-size: 5rem;
+  line-height: 110%;
+}
+
+@mixin button {
+  @include pk18;
+  color: $white;
+  text-decoration: none;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  border-radius: 24.5px;
+  backdrop-filter: blur(15px);
+}
