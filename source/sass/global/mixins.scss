@@ -1,26 +1,38 @@
-@mixin pk25 {
+@mixin pk25($color) {
   font-size: 2.5rem;
   line-height: 117%;
   letter-spacing: 0.01em;
+  color: $color;
 }
 
-@mixin pk18 {
+@mixin pk18($color) {
   font-size: 1.8rem;
   line-height: 122%;
+  color: $color;
 }
 
-@mixin pk50 {
+@mixin pk50($color) {
   font-weight: 800;
   font-size: 5rem;
   line-height: 110%;
+  text-transform: uppercase;
+  color: $color;
 }
 
 @mixin button {
-  @include pk18;
-  color: $white;
+  @include pk18($white);
   text-decoration: none;
   padding-top: 19px;
   padding-bottom: 18px;
   border-radius: 24.5px;
-  backdrop-filter: blur(15px);
+  box-shadow: inset 0 4px 11px rgba(255, 255, 255, 0.25);
+  transition: .1s all ease-in;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+  }
+
+  &:focus {
+    box-shadow: inset 0 4px 11px rgba(255, 255, 255, 0.5);
+  }
 }

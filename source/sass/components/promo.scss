@@ -1,0 +1,67 @@
+.promo {
+  overflow: hidden;
+  background: $grayBackground;
+}
+
+.promo__container {
+  position: relative;
+  max-width: 1320px;
+  padding: 264px 20px 379px 20px;
+  margin: 0 auto;
+}
+
+.promo__content {
+  width: 60%;
+  display: grid;
+  row-gap: 26px;
+  grid-template-columns: 1fr min-content;
+  align-items: center;
+  z-index: 2;
+}
+
+.promo__heading {
+  margin: 0;
+  grid-column: 1 / -1;
+  @include pk50($black);
+}
+
+.promo__desc {
+  margin: 0;
+  display: inline-block;
+  width: 64%;
+  @include pk25($grayText);
+}
+
+.promo__button {
+  display: inline-block;
+  margin-right: 40px;
+  @include button;
+  padding-left: 46px;
+  padding-right: 46px;
+  background: linear-gradient(94.71deg, #fe6174 0%, #3641b7 100%);
+
+  &:active {
+    background: linear-gradient(94.71deg, darken(#fe6174, 10%) 0%, darken(#3641b7, 10%) 100%);
+    box-shadow: inset 0 4px 11px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.promo__image {
+  position: absolute;
+  display: inline-block;
+  top: 111px;
+  right: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 228px;
+    height: 322px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(135px);
+    background: #fe6174;
+    border-radius: 50%;
+  }
+}

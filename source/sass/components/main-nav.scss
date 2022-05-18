@@ -1,0 +1,19 @@
+.main-nav__list {
+  margin: 0 -20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-nav__link {
+  @include pk18($grayText);
+  text-decoration: none;
+  transition: .3s all ease-in;
+  padding: 20px;
+
+  &:hover {
+    color: darken($grayText, 50%);
+  }
+}
