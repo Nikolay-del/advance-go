@@ -1,0 +1,51 @@
+.page-footer {
+  position: relative;
+  z-index: 10;
+  background: $black;
+  padding: 87px 0;
+}
+
+.page-footer__container {
+  max-width: 1323px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer__politics-privacy {
+  @include pk18($white);
+  text-decoration: none;
+  width: 21%;
+}
+
+.page-footer__opportunities p {
+  @include pk18($white);
+  margin: 0 0 18px;
+}
+
+.page-footer__opportunities-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 18px;
+}
+
+.page-footer__opportunities-link {
+  @include pk18($white);
+  text-decoration: none;
+}
+
+.page-footer__registration {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+
+  &-link {
+    display: block;
+    @include pk18($white);
+    text-decoration: none;
+    margin-bottom: 48px;
+  }
+}

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <title>Advance Go</title>
 </head>
 <body class="no-js">
@@ -16,9 +17,9 @@
     </a>
     <div class="main-nav">
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#" class="main-nav__link">С чего начать?</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Возможности</a></li>
-        <li class="main-nav__item"><a href="#" class="main-nav__link">Помощь</a></li>
+        <li class="main-nav__item"><a href="#where-to-begin" class="main-nav__link">С чего начать?</a></li>
+        <li class="main-nav__item"><a href="#advantages" class="main-nav__link">Возможности</a></li>
+        <li class="main-nav__item"><a href="#support" class="main-nav__link">Помощь</a></li>
       </ul>
     </div>
 
@@ -29,9 +30,10 @@
   <section class="promo">
     <div class="promo__container">
       <div class="promo__content">
-        <h1 class="promo__heading">Advance.Go - помощник в интеграции рекламы в боты, чаты, каналы.</h1>
-        <p class="promo__desc">Покупай рекламу просто, быстро и безопасно</p>
-        <a href="#" class="promo__button">Перейти</a>
+        <h1 class="promo__heading animate__animated animate__zoomInRight">Advance.Go - помощник в интеграции рекламы в боты, чаты,
+          каналы.</h1>
+        <p class="promo__desc animate__animated animate__slideInLeft">Покупай рекламу просто, быстро и безопасно</p>
+        <a href="#" class="promo__button animate__animated animate__slideInRight">Перейти</a>
       </div>
       <div class="promo__image">
         <picture>
@@ -50,7 +52,7 @@
       </div>
     </div>
   </section>
-  <section class="advantages">
+  <section class="advantages" id="advantages">
     <div class="advantages__container">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages__list">
@@ -85,11 +87,11 @@
       </ul>
     </div>
   </section>
-  <section class="support">
+  <section class="support" id="support">
     <div class="support__container">
       <h2 class="support__heading">Получай поддержку 24/7</h2>
       <p class="support__name-list">Консультируем по:</p>
-      <ul class="support__list-button">
+      <ul class="support__list-buttons">
         <li class="support__item-button">
           <button type="button" class="support__button" id="button-finance">Финансы</button>
         </li>
@@ -102,45 +104,55 @@
       </ul>
     </div>
   </section>
-  <section class="where-to-begin">
+  <section class="where-to-begin" id="where-to-begin">
     <div class="where-to-begin__container">
       <h2 class="where-to-begin__heading">С чего начать?</h2>
       <p class="where-to-begin__desc">Посмотри видео инструкцию</p>
       <div class="where-to-begin__for-user">
         <h3 class="where-to-begin__heading">Для пользователей</h3>
-        <iframe width="1060" height="597" src="https://www.youtube.com/embed/wDkztLMNK9k" title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <div class="where-to-begin__video where-to-begin__video--for-user">
+          <div class="where-to-begin__decor-circle where-to-begin__decor-circle--pink"></div>
+          <div class="where-to-begin__decor-circle where-to-begin__decor-circle--blue"></div>
+          <iframe width="1060" height="597" src="https://www.youtube.com/embed/wDkztLMNK9k" title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
       </div>
       <div class="where-to-begin__for-advertiser">
         <h3 class="where-to-begin__heading">Для рекламодателей</h3>
-        <iframe width="1060" height="597" src="https://www.youtube.com/embed/wDkztLMNK9k" title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <div class="where-to-begin__video where-to-begin__video--for-advertiser">
+          <div class="where-to-begin__decor-circle where-to-begin__decor-circle--azure"></div>
+          <div class="where-to-begin__decor-circle where-to-begin__decor-circle--purple"></div>
+          <iframe width="1060" height="597" src="https://www.youtube.com/embed/wDkztLMNK9k" title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </section>
 </main>
-<footer class="footer">
-  <div class="footer__container">
-    <a href="#" class="footer__container politics-privacy">Политика конфиденциальности</a>
-    <div class="footer__opportunities">
+<footer class="page-footer">
+  <div class="page-footer__container">
+    <a href="#" class="page-footer__politics-privacy">Политика конфиденциальности</a>
+    <div class="page-footer__opportunities">
       <p>Возможности:</p>
-      <ul class="footer__opportunities-list">
-        <li class="footer__opportunities-item">
-          <a href="#" class="footer__opportunities-link">Для пользователей</a>
+      <ul class="page-footer__opportunities-list">
+        <li class="page-footer__opportunities-item">
+          <a href="#" class="page-footer__opportunities-link">Для пользователей</a>
         </li>
-        <li class="footer__opportunities-item">
-          <a href="#" class="footer__opportunities-link">Для рекламодателей</a>
+        <li class="page-footer__opportunities-item">
+          <a href="#" class="page-footer__opportunities-link">Для рекламодателей</a>
         </li>
       </ul>
     </div>
-    <div class="footer__registration">
-      <a href="#" class="footer__registration-link">Регистрация</a>
+    <div class="page-footer__registration">
+      <a href="#" class="page-footer__registration-link">Регистрация</a>
       <a class="logo-footer">
+        <img src="img/logo-footer.svg" width="82" height="27" alt="Логотип 'Advance Go'">
       </a>
     </div>
   </div>
 </footer>
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -50,6 +50,9 @@
   position: absolute;
   display: inline-block;
   top: 111px;
+  animation-name: imageAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease;
   right: 0;
 
   &::after {
@@ -63,5 +66,15 @@
     filter: blur(135px);
     background: $pink;
     border-radius: 50%;
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    right: -441px;
+  }
+
+  100% {
+    right: 0;
   }
 }

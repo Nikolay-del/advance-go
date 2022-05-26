@@ -26,10 +26,10 @@
   padding-bottom: 18px;
   border-radius: 24.5px;
   box-shadow: inset 0 4px 11px rgba(255, 255, 255, 0.25);
-  transition: .1s all ease-in;
+  transition: .2s all ease-in;
 
   &:hover {
-    transform: scale(1.05, 1.05);
+    transform: translateY(-10px);
   }
 
   &:focus {
