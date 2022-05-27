@@ -55,11 +55,11 @@
 
     .advantages__text {
       flex-direction: row-reverse;
+    }
 
-      &::before {
-        left: auto;
-        right: 0;
-      }
+    .advantages__text::before {
+      left: auto;
+      right: 0;
     }
   }
 }
@@ -94,7 +94,8 @@
 .advantages__paragraph {
   margin: 0;
   width: 52%;
-  @include pk25($white)
+
+  @include pk25($white);
 }
 
 .advantages__button {

@@ -22,6 +22,7 @@
 .promo__heading {
   margin: 0;
   grid-column: 1 / -1;
+
   @include pk50($black);
 }
 
@@ -29,12 +30,14 @@
   margin: 0;
   display: inline-block;
   width: 64%;
+
   @include pk25($grayText);
 }
 
 .promo__button {
   display: inline-block;
   margin-right: 40px;
+
   @include button;
   padding-left: 46px;
   padding-right: 46px;

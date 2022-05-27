@@ -44,6 +44,7 @@
 
   &-link {
     display: block;
+
     @include pk18($white);
     text-decoration: none;
     margin-bottom: 48px;

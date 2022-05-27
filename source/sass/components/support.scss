@@ -12,11 +12,13 @@
 .support__heading {
   width: 47%;
   margin: 0 0 98px;
+
   @include pk50($white);
 }
 
 .support__name-list {
   margin: 0 0 31px;
+
   @include pk25($white);
 }
 
@@ -30,6 +32,7 @@
 
 .support__button {
   background: none;
+
   @include pk50(transparent);
   border: none;
   -webkit-text-stroke: 2px $white;

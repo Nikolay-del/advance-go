@@ -1,6 +1,6 @@
 .enjoy {
   background: $black;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 
 .enjoy__container {
@@ -13,6 +13,7 @@
 .enjoy__heading {
   margin: 0;
   width: 46%;
+
   @include pk50($white);
 }
 
